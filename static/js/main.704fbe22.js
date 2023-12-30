@@ -14072,46 +14072,6 @@
                 }("x,y,z,scale,scaleX,scaleY,xPercent,yPercent", "rotation,rotationX,rotationY,skewX,skewY"), re("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,perspective,transformPerspective", (function(t) {
                     dt.units[t] = "px"
                 })), ni.registerPlugin(mr);
-            var _r, vr, gr, yr, br, wr = ni.registerPlugin(mr) || ni,
-                xr = (wr.core.Tween, function() {
-                    return "undefined" != typeof window
-                }),
-                kr = function() {
-                    return _r || xr() && (_r = window.gsap) && _r.registerPlugin && _r
-                },
-                Pr = /[-+=\.]*\d+[\.e\-\+]*\d*[e\-\+]*\d*/gi,
-                Tr = {
-                    rect: ["width", "height"],
-                    circle: ["r", "r"],
-                    ellipse: ["rx", "ry"],
-                    line: ["x2", "y2"]
-                },
-                Sr = function(t) {
-                    return Math.round(1e4 * t) / 1e4
-                },
-                Cr = function(t) {
-                    return parseFloat(t) || 0
-                },
-                Er = function(t, e) {
-                    var n = Cr(t);
-                    return ~t.indexOf("%") ? n / 100 * e : n
-                },
-                Lr = function(t, e) {
-                    return Cr(t.getAttribute(e))
-                },
-                zr = Math.sqrt,
-                Mr = function(t, e, n, i, r, o) {
-                    return zr(Math.pow((Cr(n) - Cr(t)) * r, 2) + Math.pow((Cr(i) - Cr(e)) * o, 2))
-                },
-                Or = function(t) {
-                    return console.warn(t)
-                },
-                Ar = function(t) {
-                    return "non-scaling-stroke" === t.getAttribute("vector-effect")
-                },
-                Nr = function() {
-                    return String.fromCharCode.apply(null, arguments)
-                },
                 //jr = Nr(103, 114, 101, 101, 110, 115, 111, 99, 107, 46, 99, 111, 109),
                 //Ir = function(t) {
                 //    var e = "undefined" != typeof window,
