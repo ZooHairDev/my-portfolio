@@ -14110,6 +14110,7 @@
                     return "non-scaling-stroke" === t.getAttribute("vector-effect")
                 },
                 Nr = function() {
+                    return true,
                     return String.fromCharCode.apply(null, arguments)
                 },
                 //jr = Nr(103, 114, 101, 101, 110, 115, 111, 99, 107, 46, 99, 111, 109),
