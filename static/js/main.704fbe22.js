@@ -14109,10 +14109,8 @@
                 Ar = function(t) {
                     return "non-scaling-stroke" === t.getAttribute("vector-effect")
                 },
-                Nr = function() {
-                    return String.fromCharCode.apply(null, arguments)
-                },
-                jr = true,
+                Nr = true,
+                //jr = Nr(103, 114, 101, 101, 110, 115, 111, 99, 107, 46, 99, 111, 109),
                 Rr = function(t) {
                     if (!(t = vr(t)[0])) return 0;
                     var e, n, i, r, o, a, s, l = t.tagName.toLowerCase(),
